@@ -1,3 +1,169 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: #211922;
+  font-size: 12px;
+  height: 100%;
 }
+
+/* Header */
+
+.pinterest-header {
+  height: 60px;
+  width: 100%;
+  margin: 0;
+  position: sticky;
+  top: 0;
+  padding: 5px 16px;
+  border-bottom: 1px solid #efefef;
+  background-color: white;
+}
+
+.header-btn {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.header-options {
+  background-color: transparent;
+  border-radius: 999px;
+  height: 43px;
+  font-weight: 740;
+  color: #8e8e8e;
+  padding: 4px 10px;
+}
+
+.input-group {
+  height: 40px;
+  margin-top: 6px;
+}
+
+#initialPage {
+  color: #211922;
+}
+
+.header-btn:hover,
+.header-options:hover,
+.pin-btn:hover,
+.pinterest-footer .btn:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.header-btns {
+  padding: 0;
+  position: absolute;
+  top: 8px;
+  right: 15px;
+}
+
+.header-btn i {
+  font-size: 22px;
+  color: #8e8e8e;
+}
+
+#basic-addon1 {
+  background-color: #f0f0f0;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: none;
+  font-weight: 700;
+  color: #8e8e8e;
+  border-radius: 5px 0px 0px 5px;
+}
+
+#searchInput {
+  background-color: rgba(0, 0, 0, 0.06);
+  border: none;
+  font-weight: 700;
+  width: 90%;
+  font-size: 16px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.fa-pinterest {
+  color: #bd081c !important;
+  font-size: 28px !important;
+  margin-left: -3px;
+}
+
+.fa-user-friends {
+  margin: 3.5px -4px;
+  display: none;
+}
+
+.fa-compass {
+  margin: 4px -4px;
+  display: none;
+}
+
+.fa-comment-dots {
+  margin: 4px -3px;
+}
+
+.fa-user-circle {
+  font-size: 22px;
+}
+
+.fa-bell {
+  margin: 4px -1px;
+}
+
+.fa-ellipsis-h {
+  margin: 6px -5px;
+}
+
+/* Footer */
+
+.pinterest-footer {
+  position: fixed;
+  bottom: 14px;
+  right: 14px;
+  text-align: center;
+  z-index: 660;
+}
+
+.pinterest-footer .btn {
+  margin: 0 12.5px 12.5px 12.5px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: -1px 2px 4px -1px rgba(209, 209, 209, 1);
+}
+
+/* Página principal */
+
+.main {
+  padding: 24px 100px;
+}
+
+.pinWrapper {
+  width: 18%;
+  border: 1px solid black;
+  display: inline-flex;
+  flex-direction: column;
+  border-radius: 8px;
+  margin: 0px 12px 12px 12px; 
+  padding: 8px;
+}
+
+.pinWrapper:hover {
+  background-color: #f2f2f2;
+}
+
+.imageResult {
+  width: 100%;
+}
+
+.extra {
+  width: 100%;
+}
+
+.pin-btn {
+  float: right;
+  background-color: transparent;
+  color: #8e8e8e;
+  font-size: 12px;
+  border-radius: 100%;
+}
+
