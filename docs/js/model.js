@@ -4,7 +4,8 @@ function getAPI(search) {
   $.getJSON(URL, function(data) {
     if (parseInt(data.totalHits) > 0)
       $.each(data.hits, function(i, hit) {
-        printImages(hit.largeImageURL);
+        console.log(hit);       
+        printImages(hit);
       });
     else
       console.log('No hits');

@@ -9,7 +9,7 @@ let num = 0;
 function printImages(image) {
   num++;
   imageContainer.innerHTML += `<div class="pinWrapper card" data-toggle="modal" data-target="#a${num}">
-    <img src="${image}" class="imageResult" alt="">
+    <img src="${image.largeImageURL}" class="imageResult" alt="">
     <div class="extra">
       <button class="btn pin-btn">
         <i class="fas fa-ellipsis-h"></i>
@@ -36,7 +36,7 @@ function printImages(image) {
         </div>
         <div class="modal-body row">
           <div class="large-image-container">
-            <img src="${image}" class="image-result" alt="">
+            <img src="${image.largeImageURL}" class="image-result" alt="">
           </div>
           <div class="right-content">
             <button class="btn right-btn">
@@ -54,7 +54,7 @@ function printImages(image) {
               </div>
               <div class="info-pins col-3">
                 <i class="fas fa-thumbtack"></i>
-                <span>237</span>
+                <span>${image.favorites}</span>
               </div>
             </div>
           </div>
