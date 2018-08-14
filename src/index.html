@@ -44,7 +44,7 @@
       </button>
       <button class="btn header-options">
         <i class="fas fa-user-circle"></i>
-        <span>Usuario</span>
+        <span>Rav</span>
       </button>
       <button class="btn header-btn">
         <i class="fas fa-comment-dots"></i>
@@ -59,15 +59,25 @@
   </header>
 
   <!-- Página principal -->
-  <div id="imageContainer" class="container-fluid main">
+  <div id="imageContainer" class="container-fluid main card-columns">
   </div>
 
   <!-- Footer -->
   <footer class="pinterest-footer">
-    <div>
-      <button class="btn footer-btn">
+    <div class="btn-group dropleft">
+      <button class="btn footer-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <i class="fas fa-plus"></i>
       </button>
+      <div class="dropdown-menu">
+        <a id="openModal" href="#" class="list-group-item list-group-item-action">
+          <i class="fas fa-plus"></i>
+          <span>Subir un pin</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="fas fa-globe"></i>
+          <span>Guardar desde un sitio web</span>
+        </a>
+      </div>
     </div>
     <div>
       <button class="btn footer-btn">
@@ -75,8 +85,6 @@
       </button>
     </div>
   </footer>
-
-
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
