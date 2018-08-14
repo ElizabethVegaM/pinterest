@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
     crossorigin="anonymous">
   <!-- Tipografías -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu" rel="stylesheet">
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
@@ -69,7 +69,7 @@
         <i class="fas fa-plus"></i>
       </button>
       <div class="dropdown-menu">
-        <a id="openModal" href="#" class="list-group-item list-group-item-action">
+        <a id="openModal" href="#" class="list-group-item list-group-item-action" data-toggle="modal" data-target="#exampleModalCenter">
           <i class="fas fa-plus"></i>
           <span>Subir un pin</span>
         </a>
@@ -86,6 +86,46 @@
     </div>
   </footer>
 
+  <!-- Modal subir un pin -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLongTitle">Crear Pin</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body row">
+          <div class="load-image col-5">
+            <div class="load-container">
+              <i class="fas fa-camera"></i>
+              <p>
+                <strong>Arrastra, suelta o haz clic para cargar</strong>
+              </p>
+            </div>
+          </div>
+          <form>
+            <div class="form-group">
+              <label for="webSite">Sitio Web</label>
+              <input type="url" class="form-control" id="webSite" placeholder="Añade la URL con la que enlaza este Pin">
+            </div>
+            <div class="form-group">
+              <label for="pinDescribe">Descripción</label>
+              <textarea id="pinDescribe" class="form-control" name="" id="" cols="30" rows="6" placeholder="Di algo más sobre este Pin"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <div class="upload-options">
+            <span class="upload-pin">Cargar Pin</span>
+            <span class="save-from">Guardar desde el sitio</span>
+          </div>
+          <button class="btn ok-btn" disabled>Listo</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
